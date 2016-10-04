@@ -8,15 +8,9 @@ database:
 map:
   build: .
   ports:
-    - "80"
-  links:
-    - "database:atlas_db"
-    - "database:nap_db"
-    - "database:milieuthemas_db"
-    - "database:panorama_db"
-    - "database:parkeervakken_db"
-    - "database:basiskaart_db"
-    - "database:handelsregister_db"
+    - "8989:80"
+  external_links:
+    - "handelsregister_database_1:handelsregister_db"
   environment:
     ATLAS_DB_NAME: atlas
     ATLAS_DB_USER: postgres
@@ -43,6 +37,6 @@ map:
     BASISKAART_DB_PASSWORD: insecure
 
     HANDELSREGISTER_DB_NAME: handelsregister
-    HANDELSREGISTER_DB_USER: postgres
+    HANDELSREGISTER_DB_USER: handelsregister
     HANDELSREGISTER_DB_PASSWORD: insecure
 
