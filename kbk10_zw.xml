@@ -877,12 +877,12 @@
               <ogc:Literal>autosnelweg</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <MinScaleDenominator>8000</MinScaleDenominator>
-          <MaxScaleDenominator>12500</MaxScaleDenominator>
+          <MinScaleDenominator>3500</MinScaleDenominator>
+          <MaxScaleDenominator>8000</MaxScaleDenominator>
           <LineSymbolizer>
             <Stroke>
               <CssParameter name="stroke">#787878</CssParameter>
-              <CssParameter name="stroke-width">5</CssParameter>
+              <CssParameter name="stroke-width">6</CssParameter>
             </Stroke>
           </LineSymbolizer>
         </Rule>
@@ -893,12 +893,12 @@
               <ogc:Literal>autosnelweg</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <MinScaleDenominator>3500</MinScaleDenominator>
-          <MaxScaleDenominator>8000</MaxScaleDenominator>
+          <MinScaleDenominator>8000</MinScaleDenominator>
+          <MaxScaleDenominator>12500</MaxScaleDenominator>
           <LineSymbolizer>
             <Stroke>
               <CssParameter name="stroke">#787878</CssParameter>
-              <CssParameter name="stroke-width">6</CssParameter>
+              <CssParameter name="stroke-width">5</CssParameter>
             </Stroke>
           </LineSymbolizer>
         </Rule>
@@ -916,12 +916,12 @@
               <ogc:Literal>autosnelweg</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <MinScaleDenominator>8000</MinScaleDenominator>
-          <MaxScaleDenominator>12500</MaxScaleDenominator>
+          <MinScaleDenominator>3500</MinScaleDenominator>
+          <MaxScaleDenominator>8000</MaxScaleDenominator>
           <LineSymbolizer>
             <Stroke>
               <CssParameter name="stroke">#DFDFDF</CssParameter>
-              <CssParameter name="stroke-width">3</CssParameter>
+              <CssParameter name="stroke-width">4</CssParameter>
             </Stroke>
           </LineSymbolizer>
         </Rule>
@@ -932,12 +932,12 @@
               <ogc:Literal>autosnelweg</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <MinScaleDenominator>3500</MinScaleDenominator>
-          <MaxScaleDenominator>8000</MaxScaleDenominator>
+          <MinScaleDenominator>8000</MinScaleDenominator>
+          <MaxScaleDenominator>12500</MaxScaleDenominator>
           <LineSymbolizer>
             <Stroke>
               <CssParameter name="stroke">#DFDFDF</CssParameter>
-              <CssParameter name="stroke-width">4</CssParameter>
+              <CssParameter name="stroke-width">3</CssParameter>
             </Stroke>
           </LineSymbolizer>
         </Rule>

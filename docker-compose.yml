@@ -1,92 +1,24 @@
 version: "3.0"
 services:
-  database:
-    image: amsterdam/postgres
-    ports:
-      - "5403:5432"
-    environment:
-      POSTGRES_PASSWORD: insecure
-    volumes:
-        - "~/.ssh/datapunt.key:/root/.ssh/datapunt.key"
-
   map:
     build: .
     ports:
-      - "80"
-    links:
-      - "database:database"
+      - "8383:80"
     environment:
-      BAG_DB_NAME: bag
-      BAG_DB_USER: postgres
-      BAG_DB_PASSWORD: insecure
-      BAG_DB_HOST: database
-
-      NAP_DB_NAME: nap
-      NAP_DB_USER: postgres
-      NAP_DB_PASSWORD: insecure
-      NAP_DB_HOST: database
-
-      MILIEUTHEMAS_DB_NAME: milieuthemas
-      MILIEUTHEMAS_DB_USER: postgres
-      MILIEUTHEMAS_DB_PASSWORD: insecure
-      MILIEUTHEMAS_DB_HOST: database
-
-      PANORAMA_DB_NAME: panorama
-      PANORAMA_DB_USER: postgres
-      PANORAMA_DB_PASSWORD: insecure
-      PANORAMA_DB_HOST: database
-
-      PARKEERVAKKEN_DB_NAME: parkeervakken
-      PARKEERVAKKEN_DB_USER: postgres
-      PARKEERVAKKEN_DB_PASSWORD: insecure
-      PARKEERVAKKEN_DB_HOST: database
-
-      PREDICTIVEPARKING_DB_NAME: predictiveparking
-      PREDICTIVEPARKING_DB_USER: postgres
-      PREDICTIVEPARKING_DB_PASSWORD: insecure
-      PREDICTIVEPARKING_DB_HOST: database
-
-      BASISKAART_DB_NAME: basiskaart
-      BASISKAART_DB_USER: postgres
-      BASISKAART_DB_PASSWORD: insecure
-      BASISKAART_DB_HOST: database
-
-      HANDELSREGISTER_DB_NAME: handelsregister
-      HANDELSREGISTER_DB_USER: postgres
-      HANDELSREGISTER_DB_PASSWORD: insecure
-      HANDELSREGISTER_DB_HOST: database
-
-      TELLUS_DB_NAME: tellus
-      TELLUS_DB_USER: postgres
-      TELLUS_DB_PASSWORD: insecure
-      TELLUS_DB_HOST: database
-
-      MONUMENTEN_DB_NAME: monumenten
-      MONUMENTEN_DB_USER: postgres
-      MONUMENTEN_DB_PASSWORD: insecure
-      MONUMENTEN_DB_HOST: database
-
-      OVERLASTGEBIEDEN_DB_NAME: overlastgebieden
-      OVERLASTGEBIEDEN_DB_USER: postgres
-      OVERLASTGEBIEDEN_DB_PASSWORD: insecure
-      OVERLASTGEBIEDEN_DB_HOST: database
-
-      REISTIJDENAUTO_DB_NAME: reistijdenauto
-      REISTIJDENAUTO_DB_USER: postgres
-      REISTIJDENAUTO_DB_PASSWORD: insecure
-      REISTIJDENAUTO_DB_HOST: database
-
-      GRONDEXPLOITATIE_DB_NAME: grondexploitatie
-      GRONDEXPLOITATIE_DB_USER: grondexploitatie
-      GRONDEXPLOITATIE_DB_PASSWORD: insecure
-      GRONDEXPLOITATIE_DB_HOST: database
-
-      VARIOUS_SMALL_DATASETS_DB_NAME: various_small_datasets
-      VARIOUS_SMALL_DATASETS_DB_USER: various_small_datasets
-      VARIOUS_SMALL_DATASETS_DB_PASSWORD: insecure
-      VARIOUS_SMALL_DATASETS_DB_HOST: database
-
-      MAP_URL: "http://mapserver"
-
+      BASISKAART_DB_NAME: AMS_Mapserver_ma_2018
+      BASISKAART_DB_USER: AMS_Mapserver_ma_2018
+      BASISKAART_DB_PASSWORD: AMS_Mapserver_ma_2018
+      BASISKAART_DB_HOST: postgres
+      BASISKAART_DB_PORT: 5432
+      MAP_URL: "http://localhost"
     volumes:
-      - /tmp/srv/lufo:/srv/lufo
+      - /tmp/srv/:/srv/
+      - /home/niene/Documents/00_Projecten/2017_03_Amsterdam_mapserver:/srv/mapserver/
+    networks:
+      - 201805amsterdammapserver_default
+    external_links:
+      - 201805amsterdammapserver_postgres_1:postgres
+
+networks:
+  201805amsterdammapserver_default:
+    external: true

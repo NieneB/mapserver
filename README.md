@@ -23,7 +23,7 @@ niet vanuit een webbrowser. In de webbrowser geven de URL links foutmeldingen.
 ## Start mapserver in de docker
     
     docker-compose build
-    docker-compose run -p "8383:80" -v /tmp/srv/lufo:/srv/lufo map
+    docker-compose run -p "8383:80" -v /home/niene/Documents/00_Projecten/2017_03_Amsterdam_mapserver:/srv/mapserver/ map
 
 Bij dit laatste commando moet de directory /tmp/srv/lufo local bestaan. Om luchtfotos te gebruiken moet deze
 directory luchtfotos bevatten of een symlink zijn naar luchtfotos.
