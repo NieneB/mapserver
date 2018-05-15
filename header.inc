@@ -26,6 +26,7 @@
   DEBUG    5
   # For errors from underlying GDAL (shows SQL query issues) -- is spammy
   # CONFIG "CPL_DEBUG" "ON"
+  # CONFIG "PROJ_DEBUG" "ON"
 
   #=============================================================================
   # MAP: algemeen
@@ -56,7 +57,7 @@
       "ows_feature_info_mime_type"   "application/json"
       "wms_format"                   "image/png"
       "wfs_encoding"                 "UTF-8"
-      "wfs_maxfeatures"              "10000"
+      "wfs_maxfeatures"              "500000"
       "wfs_getfeature_formatlist"    "gml,geojson,csv,shapezip,spatialzip"
 
       # verplicht om aan de OGC standaard te voldoen:
@@ -79,7 +80,7 @@
   DEFRESOLUTION                      91
 
   PROJECTION
-    "init=epsg:28992"
+     "init=epsg:28992"
   END
 
 

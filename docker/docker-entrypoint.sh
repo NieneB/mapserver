@@ -30,4 +30,3 @@ sed -i 's#MAP_URL_REPLACE#'"$MAP_URL"'#g' /srv/mapserver/topografie.map /srv/map
 
 echo Starting server
 apachectl -D FOREGROUND
-
