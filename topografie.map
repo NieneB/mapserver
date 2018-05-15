@@ -63,15 +63,7 @@ MAP
             "wms_abstract"        "Basiskaart Amsterdam - Light"
             "wms_srs"             "EPSG:28992"
             "wms_name"            "vlakken,lijnen"
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-            "wms_sld_url"         "MAP_URL_REPLACE/kbk50_light.xml"
-=======
-            "wms_sld_url"         "http://localhost/sld/kbk50_light.xml"
->>>>>>> Stashed changes
-=======
             "wms_sld_url"         "MAP_URL_REPLACE/sld/kbk50_light.xml"
->>>>>>> origin/master
             "wms_format"          "image/png"
             "wms_server_version"  "1.1.1"
             "wms_transparent"     "false"
@@ -98,15 +90,7 @@ MAP
             "wms_abstract"        "Basiskaart Amsterdam - ZW"
             "wms_srs"             "EPSG:28992"
             "wms_name"            "vlakken,lijnen"
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-            "wms_sld_url"         "MAP_URL_REPLACE/kbk50_zw.xml"
-=======
-            "wms_sld_url"         "http://localhost/sld/kbk50_zw.xml"
->>>>>>> Stashed changes
-=======
             "wms_sld_url"         "MAP_URL_REPLACE/sld/kbk50_zw.xml"
->>>>>>> origin/master
             "wms_format"          "image/png"
             "wms_server_version"  "1.1.1"
             "wms_transparent"     "false"
@@ -163,15 +147,7 @@ MAP
             "wms_abstract"        "Basiskaart Amsterdam -Light"
             "wms_srs"             "EPSG:28992"
             "wms_name"            "vlakken,lijnen"
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-            "wms_sld_url"         "MAP_URL_REPLACE/kbk10_light.xml"
-=======
-            "wms_sld_url"         "http://localhost/sld/kbk10_light.xml"
->>>>>>> Stashed changes
-=======
             "wms_sld_url"         "MAP_URL_REPLACE/sld/kbk10_light.xml"
->>>>>>> origin/master
             "wms_format"          "image/png"
             "wms_server_version"  "1.1.1"
             "wms_transparent"     "false"
@@ -198,15 +174,7 @@ MAP
             "wms_abstract"        "Basiskaart Amsterdam - ZW"
             "wms_srs"             "EPSG:28992"
             "wms_name"            "vlakken,lijnen"
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-            "wms_sld_url"         "MAP_URL_REPLACE/kbk10_zw.xml"
-=======
-            "wms_sld_url"         "http://localhost/sld/kbk10_zw.xml"
->>>>>>> Stashed changes
-=======
             "wms_sld_url"         "MAP_URL_REPLACE/sld/kbk10_zw.xml"
->>>>>>> origin/master
             "wms_format"          "image/png"
             "wms_server_version"  "1.1.1"
             "wms_transparent"     "false"
@@ -263,15 +231,7 @@ MAP
             "wms_abstract"        "Basiskaart Amsterdam - Light"
             "wms_srs"             "EPSG:28992"
             "wms_name"            "hoogte_2,hoogte_1,hoogte0,hoogte1,hoogte2,hoogte3,hoogte4"
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-            "wms_sld_url"         "MAP_URL_REPLACE/bgt_light.xml"
-=======
-            "wms_sld_url"         "http://localhost/sld/bgt_light.xml"
->>>>>>> Stashed changes
-=======
             "wms_sld_url"         "MAP_URL_REPLACE/sld/bgt_light.xml"
->>>>>>> origin/master
             "wms_format"          "image/png"
             "wms_server_version"  "1.1.1"
             "wms_transparent"     "false"
@@ -298,15 +258,7 @@ MAP
             "wms_abstract"        "Basiskaart Amsterdam - ZW"
             "wms_srs"             "EPSG:28992"
             "wms_name"            "hoogte_2,hoogte_1,hoogte0,hoogte1,hoogte2,hoogte3,hoogte4"
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-            "wms_sld_url"         "MAP_URL_REPLACE/bgt_zw.xml"
-=======
-            "wms_sld_url"         "http://localhost/sld/bgt_zw.xml"
->>>>>>> Stashed changes
-=======
             "wms_sld_url"         "MAP_URL_REPLACE/sld/bgt_zw.xml"
->>>>>>> origin/master
             "wms_format"          "image/png"
             "wms_server_version"  "1.1.1"
             "wms_transparent"     "false"
